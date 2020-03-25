@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="it">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>IL SITO DELL'ASD LEGIO MARTIA PAINTBALL PESCINA</title>
+	
+	<link rel="stylesheet" href="html5ResetStyleSheet.css" type="text/css"> <!-- resetta impostazioni di default vecchi browser per renderli compatibili con HTML5 -->
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="sliding.css" type="text/css">
+	<link href="opensanscondensed.css" rel="stylesheet" type="text/css">
+	<link href="stuff.html" type="text/html">
+	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+
+
+
+	<script type="text/javascript">
+		showAutoSlides();
+		function showAutoSlides() {
+			$(document).ready(function(){
+				var
+					images = "#descrizione > img" // image selector
+				, interval = 2000         // milliseconds between transitions
+				, index = 0                 // starting index
+				, count = $(images).length  // image count
+					// the transition loop
+				, handle = setInterval(function() {
+					
+					// fade out the current image
+					$(images + ":eq(" + index + ")").fadeOut('slow');
+					// get the next index, or cycle back to 0
+					if (++index === count) index = 0;
+					// fade in the next image
+					var height = $(images + ":eq(" + index + ")").height();
+					$('#descrizione').height(height);
+					$(images + ":eq(" + index + ")").fadeIn('slow');
+					}
+					, interval
+				)
+				, stop = function(){
+					clearInterval(handle);
+				};
+				slideIndex = index;
+			});
+		}
+		
+	</script>
+</head>
+
+<body>
+	<div id = "container" itemscope itemtype="index.html">
+	<nav>
+		<ul>
+			<li><a href='index.html'>Home</a></li>
+			<li><a href='chisiamo.html'>Che cos'è LegioMartia</a></li>
+			<li><a href='modalita.html'>Modalità di gioco</a></li>
+			<li><a href='moduli.html'>Moduli</a></li>
+			<li><a href='galleria.html'>Photo Gallery</a></li>
+			<li id ="contattaciSuFacebook" ><a href='https://www.facebook.com/pg/LegioMartia'>Contattaci su Facebook</a></li>
+
+		</ul>
+	</nav>
+	
+		<header id = "modalitaGioco">
+		<span> <a href='index.html'>Le LegioFoto</a> </span>
+		</header>
+
+
+	<section id ="contatti">
+		
+		<header id ="descrizione">
+			
+			
+			<img class = "first-child" src="gallery/campo2.jpg">
+			<img class="mySlides" src="gallery/campo4.jpg">
+			<img class="mySlides" src="gallery/campo5.jpg">
+			
+			<img class="mySlides" src="gallery/campo6.jpg">
+			<img class="mySlides" src="gallery/campo7.jpg">
+			<img class="mySlides" src="gallery/campo3.jpg">
+			
+			<img class="mySlides" src="gallery/campo1.jpg">
+			<img class="mySlides" src="gallery/21032475_140000619932945_4333095664312009518_n.jpg">
+			<img class="mySlides" src="gallery/21369483_142471596352514_7661442921416782648_n.jpg">
+			
+			<img class="mySlides" src="gallery/22228121_150205145579159_6760842327622559210_n.jpg">
+			<img class="mySlides" src="gallery/22893955_155960305003643_6163994820431138823_n.jpg">
+			<img class="mySlides" src="gallery/26113993_171507870115553_4524956457550557949_n.jpg">
+			
+			<img class="mySlides" src="gallery/26165843_171507766782230_6832894765792228443_n.jpg">
+			<img class="mySlides" src="gallery/26168245_171507720115568_5515612113683083876_n.jpg">
+			<img class="mySlides" src="gallery/26239864_175203533079320_2803773547630889861_n.jpg">
+			
+			<img class="mySlides" src="gallery/19510541_122354091697598_4356095744439959341_n.jpg">
+			<img class="mySlides" src="gallery/19656896_123768054889535_6799161317464326309_n.jpg">
+			<img class="mySlides" src="gallery/19642760_123799324886408_8796835364069581775_n.jpg">
+			
+			<img class="mySlides" src="gallery/20228508_130388637560810_6526179418435600151_n.jpg">
+			<img class="mySlides" src="gallery/20292700_131605674105773_4878099537602115826_n.jpg">
+			<img class="mySlides" src="gallery/20767792_136420716957602_445908085128354416_n.jpg">
+			
+			<img class="mySlides" src="gallery/20799376_137452830187724_8836445940242727252_n.jpg">
+			<img class="mySlides" src="gallery/20992896_139304576669216_6391486782908700374_n.jpg">
+			
+		</header>
+		
+		<p> 
+		 <br>
+		Se vuoi scoprire di più su di noi seguici su <a href='https://www.facebook.com/pg/LegioMartia' target = "_blank" ><span>facebook</span></a>
+		per essere sempre aggiornato!
+		</p>
+		
+	</section>
+	
+	<!-- FOOTER-->
+	<footer>
+		<div id='legiomartia'>
+			<ul>
+				<li><a href='index.html'><span>LEGIO MARTIA</span></a><li>
+				<li><a href='https://www.facebook.com/pg/LegioMartia'><span>Facebook</span></a><li>
+				<li><a href='https://www.youtube.com/channel/UCbkyMNzvwGuN-DFyIwKC13w'><span>Youtube</span></a><li>
+			</ul>
+		</div>
+		<div id = 'altro'>
+			<ul>
+				<li><a href='https://www.facebook.com/pg/LegioMartia'><span>HAI BISOGNO DI AIUTO?</span></a><li>
+				<li><a href='chisiamo.html'><span>Contatti </span></a><li>
+				<li><a href='moduli.html'><span>Scarica i moduli</span></a><li>
+				
+			</ul>
+		</div>
+		<div id='policy'>
+			<ul>
+				<li><a href='index.html'><span>NOTE</span></a><li>
+				<li><span> la nostra mail: asdlegiomartia@gmail.com</a><li>
+				<li><a href='https://t.me/legiomartia'><span>telegram</span></a><li>
+			</ul>
+		</div>
+	</footer>
+	</div>
+	
+</body>
